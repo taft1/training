@@ -25,6 +25,26 @@ function myFunction() {
 }
 </script>
 
+<div class="content">
+bye
+</div>
+
+<button id="toggle">Toggle</button>
+
+<script>
+
+ const targetDiv = document.getElementById("content");
+    const btn = document.getElementById("toggle");
+    btn.onclick = function () {
+      if (targetDiv.style.display !== "none") {
+        targetDiv.style.display = "none";
+      } else {
+        targetDiv.style.display = "block";
+      }
+    };
+
+</script>
+
 
 
 
